@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keystroke Tracker (Safe)</title>
+</head>
+<body>
+  <h2>Typing Area (Logs to Console Only)</h2>
+  <textarea id="input" rows="5" cols="40" placeholder="Type something..."></textarea>
+  <p>Open the browser console to see the logged keys.</p>
+
+  <script>
+    const textarea = document.getElementById('input');
+    textarea.addEventListener('keydown', function(e) {
+      console.log('Key pressed:', e.key);
+    });
+  </script>
+</body>
+</html>
